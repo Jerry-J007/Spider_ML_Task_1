@@ -1,0 +1,67 @@
+I have experimented with different latent space dimensions and have observed the reconstruction quality and effect of bottleneck 
+
+Experimental Results: The Information Bottleneck
+
+Mathematical Convergence: All three architectures successfully learned to compress and reconstruct the data across 3 epochs. The tight tracking between Training MSE and Validation MSE indicates that the models generalized well without overfitting.
+
+The Dimension Trade-off: The experiment mathematically validated the information bottleneck principle. The model forced to use the highest compression (Latent = 16) yielded the highest Mean Squared Error. Conversely, providing the model with more representation variables (Latent = 64) resulted in the lowest error.
+
+Visual Fidelity: The numerical loss was directly reflected in the visual output. The 16-dimension model captured only global shapes (e.g., the rough outline of pants or a shoe) but suffered from heavy blurring. The 64-dimension model retained significantly more granular detail, successfully reconstructing sharper edges, inner textures, and structural boundaries.
+
+Conclusion: Restricting the latent space forces the neural network to prioritize broad, foundational features over fine details. A larger bottleneck dimension physically retains more data, minimizing reconstruction loss and drastically improving visual clarity at the cost of less aggressive data compression.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
